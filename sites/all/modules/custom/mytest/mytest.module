@@ -1,0 +1,55 @@
+<?php 
+/**
+ * @file
+ * My test module
+ */
+
+
+
+function mytest_rules_action_info(){
+	$action = array(
+	'test' => array( 'test1' => array(),),
+	
+	);
+	return $action;
+}
+function test(){
+	dpm('Hey, This is My World---------- !');
+    test1();
+}
+
+function test1(){
+	dpm('We are testing Rules module');
+   
+}
+
+
+function mytest_block_info() {
+  // This example comes from node.module.
+  $blocks['myblock'] = array(
+    'info' => t('ruleblock'),
+    'cache' => DRUPAL_NO_CACHE,
+  );
+
+
+  return $blocks;
+}
+
+function mytest_block_view($delta = '') {
+  // This example is adapted from node.module.
+  $block = array();
+
+  switch ($delta) {
+    case 'myblock':
+      $block['subject'] = t('Hello........');
+/*
+      $block['content'] = array(
+        '#theme' => 'feed_icon',
+        '#url' => 'rss.xml',
+        '#title' => t('Syndicate'),
+      ); */
+      break;
+
+  }
+  return $block;
+}

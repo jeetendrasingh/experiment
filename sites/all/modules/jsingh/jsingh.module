@@ -1,0 +1,19 @@
+<?php
+
+/**
+By J Singh
+*/
+
+function jsingh_menu(){
+$items['jsingh'] = array(
+'page callback' => 'jsingh_my_page',
+'access arguments' => array('access content'),
+); 
+return $items;
+}
+/* Call function jsingh_my_page */
+function jsingh_my_page(){
+return "<p> Welcome to India!
+Hurray! I won :))))))
+ </p>";
+}

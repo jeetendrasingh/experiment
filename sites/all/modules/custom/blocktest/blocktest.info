@@ -1,0 +1,5 @@
+name = My Drupal Block Testing Module
+description = This is Custom Block module
+core = 7.x
+package = jsingh
+dependencies = devel

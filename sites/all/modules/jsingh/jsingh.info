@@ -1,0 +1,4 @@
+name = jsingh Mod
+description = "A simple module demo"
+core = 7.x
+files[] = jsingh.module
